@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>YouMusicLib</title>
+        <style>
+            .login{font-size:16px}
+        </style>
+    </h:head>
+    
+    <h:body>
+        <div style="background-image:url('imagens/topo.jpg');width:1100px;height:97px;margin-left:100px">
+              
+        </div>
+         <h:form id="form">
+             
+              <p:panel id="painel" header="Login" style="width:400px;height:240px;font-size:20px;margin-left:450px;margin-top:100px">
+                    <p:growl />
+                    <h:outputText value="Email" styleClass="login"/>
+                    <p:inputText style="float:right; margin-right:20px;width:250px;font-size:12px" 
+                     required="true" requiredMessage="Campo usuário obrigatório!" value="#{loginBean.login}">
+                        <f:validateLength minimum="3"></f:validateLength>
+                    </p:inputText><br/><br/>
+                    <h:outputText value="Senha" styleClass="login"/>
+                    <p:password style="float:right; margin-right:20px;width:250px;font-size:12px" 
+                    required="true" requiredMessage="Senha obrigatória" value="#{loginBean.senha}"/><br/>
+                    <p:commandButton value="Acessar" style="margin-left:272px" actionListener="#{loginBean.submit}" update="painel"/>         
+                    <hr></hr>
+                    <h:outputText value="Não cadastrado?" styleClass="login"/>
+                    <p:button value="Cadastrar" style="margin-left:137px" outcome="cadastrar"/>
+              </p:panel>
+         
+         </h:form>
+    
+    </h:body>
+
+</html>

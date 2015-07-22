@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+      
+    <ui:composition template="/template.xhtml">
+        
+        <ui:define name="conteudo">
+        
+         <h:form id="form">
+            <h:outputText dir="ltr" value="Bem-vindo #{loginBean.usuario.nome}" style="font-size:20px"/>
+            <br/>
+            <br/>
+            <p:dataTable var="musica" value="#{musicaBean.listaMusica}" style="width:600px;margin-left:12%">
+                <p:column headerText="Musica">
+                   <h:outputText value="#{musica.nome}"/>
+                </p:column>
+                <p:column headerText="Tamanho">
+                    <h:outputText value="#{musica.tamanho} KB"/>
+                </p:column>
+                
+                <p:column headerText="Player" style="width:30px">
+                    <p:commandButton  icon="ui-icon-play" actionListener="#{musicaBean.executarMusica(musica)}" ajax="false"/>
+                                 
+                </p:column>
+            
+            </p:dataTable>
+          <br/>
+
+           <audio controls="controls" style="width:400px;margin-left:170px" autoplay="autoplay">
+                 <source src="#{musicaBean.caminho}"  type="audio/mp3" />
+          </audio>
+          </h:form>
+        </ui:define>
+    </ui:composition>
+   
+     
+</html>

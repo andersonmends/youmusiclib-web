@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>YouMusicLib</title>
+        <style>
+            .login{font-size:16px}
+        </style>
+    </h:head>
+        
+    <h:body>
+         <div style="background-image:url('imagens/topo.jpg');width:1100px;height:97px;margin-left:100px">
+              
+        </div>
+        <h:form>
+        <p:panel id="painel" header="Cadastro" style="width:800px;font-size:20px;margin-left:250px;margin-top:50px">
+            <p:growl/>
+            
+            <h:outputText value="Nome" styleClass="login"/>
+            <p:inputText style="float:right; margin-right:60px;width:550px;font-size:16px" 
+            required="true" requiredMessage="Nome obrigatório!" value="#{cadastroBean.usuario.nome}"/><br/><br/>
+            
+            <h:outputText value="Email" styleClass="login"/>
+            <p:inputText style="float:right; margin-right:60px;width:550px;font-size:16px" 
+            required="true" requiredMessage="Email obrigatório!" value="#{cadastroBean.usuario.email}"/><br/><br/>        
+            
+            <h:outputText value="Senha" styleClass="login"/>
+            <p:password style="float:right; margin-right:60px;width:550px;font-size:16px"
+            required="true" requiredMessage="Senha obrigatória!" value="#{cadastroBean.usuario.senha}"
+            validatorMessage="Tamanha tem que ser maior que 5">
+                <f:validateLength minimum="5"/>
+            </p:password><br/><br/>
+            
+            <h:outputText value="Confirma senha" styleClass="login"/>
+            <p:password style="float:right; margin-right:60px;width:550px;font-size:16px"
+            required="true" requiredMessage="Confirmação de senha obrigatória!" value="#{cadastroBean.verificadorSenha}"
+            validatorMessage="Tamanha tem que ser maior que 5">
+                <f:validateLength minimum="5"/>
+            </p:password><br/><br/>
+            
+            <p:button value="Voltar" style="margin-left:73%" outcome="login"/>
+            <p:commandButton value="Cadastrar" update="painel" actionListener="#{cadastroBean.cadastrar}"/>
+        </p:panel>
+        </h:form>
+    </h:body>
+</html>

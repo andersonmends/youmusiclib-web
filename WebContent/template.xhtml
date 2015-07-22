@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+        <title>YouMusicLib</title>
+                <style>
+            *{font-size:16px}
+        </style>
+    </h:head>
+
+    <h:body>
+    
+        <div style="background-image:url('imagens/topo.jpg');width:1100px;height:97px;margin-left:100px">
+              
+        </div><br/>
+        <div>
+            <p:layout style="min-width:1100px;max-width:1100px;min-height:600px;margin-left:100px">
+
+            
+                <p:layoutUnit position="west" size="220">
+                    <ui:insert name="menu">
+                         <h:form>
+                            <p:menu style="width: 200px">
+                                <p:submenu label="Menu">
+                                    <p:menuitem value="Home" icon="ui-icon-home" outcome="/home"/>
+                                    <p:menuitem value="Profile" icon="ui-icon-wrench"/>
+                                    <p:menuitem value="Music Lib" icon="ui-icon-folder-open" outcome="/index"/>
+                                    <p:menuitem value="Upload" icon="ui-icon-arrowthickstop-1-n" outcome="/upload"/>
+                                    <p:menuitem value="Sair" icon="ui-icon-close" outcome="/login"/>
+                                </p:submenu>
+                                
+                            </p:menu>
+                         </h:form>   
+                    </ui:insert>
+                </p:layoutUnit>
+            
+                <p:layoutUnit position="center" header="Biblioteca">
+                   <ui:insert name="conteudo">
+                       
+                   </ui:insert>
+                </p:layoutUnit>
+            </p:layout>
+        </div>
+    </h:body>
+
+</html>
+
