@@ -5,9 +5,7 @@ Projeto idealizado para ser uma biblioteca de músicas online com acesso via str
 Esse projeto pessoal também foi usado como parte da minha dissertação de mestrado na UFAL, que visava avaliar o desempenho de linguagens para aplicações web que fizesse uso de streaming, em termos de CPU, de uso de memória RAM, de tempo de resposta e de taxa de transferência. A seguir o título e resumo da dissertação:
 
 
-# UM MÉTODO PARA APOIAR DECISÕES DE PROJETO EM
-APLICAÇÕES WEB COM STREAMING DE MÍDIA VISANDO
-DESEMPENHO E ESCALABILIDADE
+# UM MÉTODO PARA APOIAR DECISÕES DE PROJETO EM APLICAÇÕES WEB COM STREAMING DE MÍDIA VISANDO DESEMPENHO E ESCALABILIDADE
 
 # RESUMO
 
@@ -46,5 +44,17 @@ aplicações em termos de consumo de CPU, uso de memória, tempo de resposta e t
 • Capítulo 7 – Conclusão. Por fim, são apresentadas algumas considerações finais do estudo em questão, assim como direcionamentos para trabalhos futuros.
 
 Abaixo segue alguns dos resultado:
+
+
+![image](https://user-images.githubusercontent.com/10708492/140088420-10d07b5b-219b-49dc-ae0b-fd1c32eca677.png)
+
+![image](https://user-images.githubusercontent.com/10708492/140088549-73977aee-234f-4fb2-8ddf-60b4e1ab0ff2.png)
+
+![image](https://user-images.githubusercontent.com/10708492/140088646-4c58a5e0-70b4-4753-ab29-e46858b5afa8.png)
+
+
+
+[Dissertacao de Mestrado v. final - UFAL.pdf](https://github.com/andersonmends/youmusiclib-web/files/7468630/Dissertacao.de.Mestrado.v.final.-.UFAL.pdf)
+
 
 
