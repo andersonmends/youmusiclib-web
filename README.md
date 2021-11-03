@@ -1,4 +1,4 @@
-# youmusiclib-web
+# YouMusicLib
 
 Projeto idealizado para ser uma biblioteca de músicas online com acesso via streaming, semelhante ao Spotify e outros apps. Inicialmente pensado o back-end em Java e o front-end em JSF.
 
