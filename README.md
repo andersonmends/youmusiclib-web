@@ -4,6 +4,14 @@ Projeto idealizado para ser uma biblioteca de músicas com acesso via streaming,
 
 ![screenshot01](https://github.com/andersonmends/youmusiclib-web/blob/master/01.png)
 
+![screenshot02](https://github.com/andersonmends/youmusiclib-web/blob/master/02.png)
+
+![screenshot03](https://github.com/andersonmends/youmusiclib-web/blob/master/03.png)
+
+![screenshot04](https://github.com/andersonmends/youmusiclib-web/blob/master/04.png)
+
+![screenshot05](https://github.com/andersonmends/youmusiclib-web/blob/master/05.png)
+
 Esse projeto pessoal também foi usado como parte da minha dissertação de mestrado na UFAL, que visava avaliar o desempenho de linguagens para aplicações web que fizesse uso de streaming, em termos de CPU, de uso de memória RAM, de tempo de resposta e de taxa de transferência. A seguir um resumo da dissertação para quem possa interessar:
 
 # UM MÉTODO PARA APOIAR DECISÕES DE PROJETO EM APLICAÇÕES WEB COM STREAMING DE MÍDIA VISANDO DESEMPENHO E ESCALABILIDADE
