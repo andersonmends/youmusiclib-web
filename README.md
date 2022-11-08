@@ -2,8 +2,9 @@
 
 Projeto idealizado para ser uma biblioteca de músicas com acesso via streaming, semelhante ao Spotify e outros apps. Inicialmente pensado o back-end em Java e o front-end em JSF.
 
-Esse projeto pessoal também foi usado como parte da minha dissertação de mestrado na UFAL, que visava avaliar o desempenho de linguagens para aplicações web que fizesse uso de streaming, em termos de CPU, de uso de memória RAM, de tempo de resposta e de taxa de transferência. A seguir o título e resumo da dissertação:
+![image](https://user-images.githubusercontent.com/10708492/02.png)
 
+Esse projeto pessoal também foi usado como parte da minha dissertação de mestrado na UFAL, que visava avaliar o desempenho de linguagens para aplicações web que fizesse uso de streaming, em termos de CPU, de uso de memória RAM, de tempo de resposta e de taxa de transferência. A seguir um resumo da dissertação para quem possa interessar:
 
 # UM MÉTODO PARA APOIAR DECISÕES DE PROJETO EM APLICAÇÕES WEB COM STREAMING DE MÍDIA VISANDO DESEMPENHO E ESCALABILIDADE
 
